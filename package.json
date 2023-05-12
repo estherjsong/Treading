@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/estherjsong/Treading/issues"
   },
-  "homepage": "https://github.com/estherjsong/Treading#readme"
+  "homepage": "https://github.com/estherjsong/Treading#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
