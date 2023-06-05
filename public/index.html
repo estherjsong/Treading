@@ -15,39 +15,61 @@
     </header>
     <p>Reading is to the mind what exercise is to the body.</p>
 
+    <form id="taskform">
+        <div class="form-row">
+            <label for="choosefile">click</label>
+            <input type="file" id="choosefile" name="choosefile" accept="image/*" onchange="loadFile(this)" />
+        </div>
+        <div class="form-row">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required="true" />
+        </div>
+        <div class="form-row">
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" required="true">
+        </div>
+        <div class="form-row">
+            <label for="rating">Rate</label>
+            <select name="rating" id="rating" required="true">
+                <option value="">Select an option</option>
+                <option value=0>♡</option>
+                <option value=1>♥</option>
+                <option value=2>♥♥</option>
+                <option value=3>♥♥♥</option>
+                <option value=4>♥♥♥♥</option>
+                <option value=5>♥♥♥♥♥</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="genre">Genre</label>
+            <input type="text" name="genre" id="genre" required="true" />
+        </div>
+        <div class="form-row">
+            <label for="page">Pages</label>
+            <input type="number" name="page" id="page" required="true" />
+        </div>
+        <div class="form-row">
+            <label for="startDate">When did you start reading?</label>
+            <input type="date" name="startDate" id="startDate" required="true" />
+        </div>
+        <div class="form-row">
+            <label for="endDate">When did you finish reading?</label>
+            <input type="date" name="endDate" id="endDate" required="true" />
+        </div>
+        <div class="form-row">
+            <label for="note">Note</label>
+            <textarea name="note" id="note" rows="5" cols="50">Write a short review after reading a book
+            </textarea>
+        </div>
+        <div class="form-row">
+            <input type="submit" />
+        </div>
+    </form>
+
     <div class="background">
         <div class="window">
             <div class="popup">
-                <form id="taskform">
-                    <div class="form-row">
-                        <label for="taskName">Name</label>
-                        <input type="text" name="taskName" id="taskName" required="true" />
-                    </div>
-                    <div class="form-row">
-                        <label for="taskType">Type</label>
-                        <select name="taskType" id="taskType" required="true">
-                            <option value="">Select an option</option>
-                            <option value="Concept Ideation">Concept Ideation</option>
-                            <option value="Wireframing">Wireframing</option>
-                            <option value="Application Coding">Application Coding</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label for="taskRate">Rate</label>
-                        <input type="number" name="taskRate" id="taskRate" required="true" />
-                    </div>
-                    <div class="form-row">
-                        <label for="taskTime">Time</label>
-                        <input type="number" name="taskTime" id="taskTime" required="true" />
-                    </div>
-                    <div class="form-row">
-                        <label for="taskClient">Client</label>
-                        <input type="text" name="taskClient" id="taskClient" required="true" />
-                    </div>
-                    <div class="form-row">
-                        <input type="submit" />
-                    </div>
-                </form>
+
             </div>
         </div>
     </div>
